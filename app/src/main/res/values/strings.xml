@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">spaceInvaders</string>
+    <string name="game_Name">Monster Annihilation</string>
+    <string name="options_setup">Options</string>
+    <string name="score_menu">High Scores</string>
+    <string name="quit_menu">Quit</string>
+    <string name="play_menu">Play</string>
+    <string name="Volume">Volume</string>
+    <string name="difficulty_menu">Difficulty</string>
+    <string name="Sound">Sound</string>
+    <string name="Yes">Yes</string>
+    <string name="Confirm">Confirm</string>
+    <string name="Back">Back</string>
+    <string name="OFF">OFF</string>
+    <string name="ON">ON</string>
+    <string name="Easy">Easy</string>
+    <string name="Medium">Medium</string>
+    <string name="Hard">Hard</string>
+    <string name="High_Scores">High Score:</string>
+    <string name="ShootStart">Shoot To Start</string>
+
+</resources>

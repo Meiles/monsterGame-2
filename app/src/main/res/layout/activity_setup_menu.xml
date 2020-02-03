@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:orientation="vertical"
+    tools:context=".SetupMenuActivity">
+
+    <TextView
+        android:id="@+id/game_TextView"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/game_Name"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/play_Button"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:background="@android:color/black"
+        android:fontFamily="serif-monospace"
+        android:onClick="playGame"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        android:text="@string/play_menu"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="55sp"
+        android:textStyle="bold" />
+
+
+
+
+    <Button
+        android:id="@+id/Difficulty_Button"
+        android:layout_width="384dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:background="@android:color/black"
+        android:fontFamily="serif-monospace"
+        android:onClick="showDifficultyMenu"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        android:text="@string/difficulty_menu"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="55sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/Sound_Button"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:background="@android:color/black"
+        android:fontFamily="serif-monospace"
+        android:onClick="showSoundPopupMenu"
+        android:text="@string/Sound"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="55sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/highestScoreName"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="1dp"
+            android:layout_toEndOf="@+id/high_scores_list"
+            android:text="TextView"
+            android:textColor="@android:color/holo_purple"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/highsestScoreView"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/highestScoreName"
+            android:text="TextView"
+            android:textColor="@android:color/holo_purple"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/High_Score_Button"
+            style="@style/Widget.AppCompat.Button.Colored"
+
+            android:layout_width="match_parent"
+            android:layout_height="91dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"
+
+            android:background="@android:color/black"
+            android:fontFamily="serif-monospace"
+            android:paddingLeft="0dp"
+            android:paddingTop="0dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="0dp"
+            android:text="@string/score_menu"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/high_scores_list"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_alignStart="@+id/High_Score_Button"
+
+
+            android:layout_alignParentTop="true"
+            android:text="@string/High_Scores"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="35sp"
+            android:visibility="invisible"
+            tools:text="@string/High_Scores" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
